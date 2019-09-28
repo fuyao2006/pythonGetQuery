@@ -1,0 +1,31 @@
+[Matchsearh1]
+
+term=fromUserId
+terms=fromUserId1
+match=content
+range=fromUserId3 fromUserId4
+
+must=fromUserId fromUserId4
+should=fromUserId1 content1
+mustnot=
+filter=fromUserId2 content
+
+fromUserId3=lte gt
+fromUserId4=lte
+
+suffix=_r
+
+
+
+[Matchsearh2]
+
+term=fromUserId
+match=content
+range=indexSort
+
+must=content
+filter=fromUserId indexSort
+
+
+suffix=_r
+
